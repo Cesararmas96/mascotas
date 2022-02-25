@@ -295,7 +295,6 @@ return [
         [
             'text'    => 'Animal',
             'icon' => 'fas fa-solid fa-paw',
-
             'submenu' => [
                 [
                     'text' => 'Especies',
@@ -309,11 +308,10 @@ return [
                             'route'  => 'admin.especies.index',
                             'icon'
                             => '',
-
                         ],
                         [
                             'text' => 'Crear',
-                            'url'  => '#',
+                            'route'  => 'admin.especies.create',
                             'icon' => '',
 
                         ],
@@ -321,13 +319,13 @@ return [
                 ],
                 [
                     'text' => 'Raza',
-                    'url'  => '#',
+
                     'icon' => '',
 
                     'submenu' => [
                         [
                             'text' => 'Listar',
-                            'url'  => '#',
+                            'route'  => 'admin.razas.index',
                             'icon'
                             => ''
 
@@ -336,6 +334,8 @@ return [
                             'text' => 'Crear',
                             'icon' => '',
                             'url'  => '#',
+                            'route'  => 'admin.razas.create',
+
                         ],
                     ],
                 ],
@@ -384,33 +384,17 @@ return [
             'submenu' => [
                 [
                     'text' => 'Crear',
-                    'url'  => '#',
+                    'route'  => 'admin.roles.create',
                     'icon' => ""
                 ],
                 [
                     'text' => 'Listar',
-                    'url'  => '#',
+                    'route'  => 'admin.roles.index',
                     'icon' => ""
                 ],
             ],
         ],
 
-        [
-            'text'    => 'Permisos',
-            'icon' => 'fas faw-fa-solid fa-user-shield',
-            'submenu' => [
-                [
-                    'text' => 'Crear',
-                    'url'  => '#',
-                    'icon' => ""
-                ],
-                [
-                    'text' => 'Listar',
-                    'url'  => '#',
-                    'icon' => ""
-                ],
-            ],
-        ],
 
         [
             'text'    => 'Usuarios',
@@ -418,12 +402,12 @@ return [
             'submenu' => [
                 [
                     'text' => 'Crear',
-                    'url'  => '#',
+                    'route'  => 'admin.users.create',
                     'icon' => ""
                 ],
                 [
                     'text' => 'Listar',
-                    'url'  => '#',
+                    'route'  => 'admin.users.index',
                     'icon' => ""
 
                 ],

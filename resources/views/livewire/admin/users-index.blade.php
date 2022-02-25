@@ -21,7 +21,7 @@
             <td>{{ $user->id }}</td>
             <td>{{ $user->name }}</td>
             <td>{{ $user->persona_id }}</td>
-            <td>{{ $user->roles }}</td>
+            <td>{{ $user->roles[0]->name }}</td>
             @if ($user->status)
               <td class="text-green">Activo</td>
             @else
